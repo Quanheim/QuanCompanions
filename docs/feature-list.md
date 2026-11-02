@@ -53,7 +53,7 @@ These come from the incidents of 1 Nov 2026: about 200 tames moved to a death sp
 | A1.4 | The butcher knife still kills a protected tame. | **P6:** decided on the attacker's side and sent with the hit. The game already only lets the knife hurt tames when PvP is off. | ☐ |
 | A1.5 | Alt+E turns protection on or off for the tame you're looking at. | **P3:** a request to the owner, with no ownership grab. The flag lives on the tame. | ☐ |
 | A1.6 | "Protect all tames" server default, with per-tame override. | Server-synced, admin-locked. | ☐ |
-| A1.7 | BetterTames: health bar name is blue when protected, yellow while knocked out. | **Changed (Quandru, 2 Nov 2026):** name colours now show the relationship (see D4.8), so protection gets **no name colour**: it's a separate state, shown elsewhere (hover text). Knocked out: to decide whether it still overrides the colour. | ☐ |
+| A1.7 | BetterTames: health bar name is blue when protected, yellow while knocked out. | **Changed (Quandru, 2 Nov 2026):** name colours now show the relationship (see D4.8), so protection and knocked out get **no name colour**: both are separate states, shown in the hover text only. | ☐ |
 | A1.8 | Downed tames can be hovered and targeted (raycast helper). | Keep it simple. Needed so you can first-aid or butcher them. | ☐ |
 | A1.9 | Tames heal from empty to full in a set time (1 h); healing pauses while hungry. | **P4:** our own tick, not the AI's regeneration. | ☐ |
 
