@@ -274,6 +274,8 @@ Only features that the mods we're replacing don't already have. The source is in
 | D4.5 | Your tames on the minimap and map, with no pins added [TamedRadar] | **P11.** | ☐ |
 | D4.6 | A panel listing all your tames, wherever they are [VikingDex] | **P2, P13:** server index. | ☐ |
 | D4.7 | Why an animal is or isn't breeding, shown on hover [NearbyPanel] | **P11.** | ☐ |
+| D4.8 | **Green name for creatures following you** (Quandru, 2 Nov 2026), so you can pick out your followers in a crowd at a glance. BetterTames coloured every tame's name blue (protected), which doesn't say who it follows. Vanilla never colours names. | **P1, P11:** "following you" is decided by your player ID, on your own screen. Needs a priority with A1.7's colours: knocked out (yellow) first, then following you (green), then protected (blue), then plain. | ☐ |
+| D4.9 | **Followers always show their health bar** (Quandru, 2 Nov 2026). Vanilla shows a creature's name and bar within 10 m and only for 60 s after you last hovered over it (`EnemyHud.TestShow`, `m_hoverShowDuration`); tames already get the green "friendly" bar. Lift the 60 s limit (and perhaps widen the range) for creatures following you. | **P11.** Client-side display only. | ☐ |
 
 ### D5. Leveling
 

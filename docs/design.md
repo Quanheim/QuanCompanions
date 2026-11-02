@@ -39,6 +39,11 @@ The 16 principles in `feature-list.md` (P1–P16), from the 1 Nov incidents. The
 - Config is server-synced and admin-locked. Creature rules come from a tame list (format still to decide).
 - The server logs every teleport, recall and knock-out with counts and reasons (P12).
 
+## Ideas noted
+
+- **Followers at a glance** (2 Nov 2026): a green name for creatures following you, and their health bar always
+  showing. Added to the feature list as D4.8 and D4.9 for the review.
+
 ## Where I'd like your input
 
 1. **The feature list review.** Mark each feature in Parts A–C Keep, Drop or Change, and pick extras from Part D.
