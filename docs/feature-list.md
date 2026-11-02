@@ -53,7 +53,7 @@ These come from the incidents of 1 Nov 2026: about 200 tames moved to a death sp
 | A1.4 | The butcher knife still kills a protected tame. | **P6:** decided on the attacker's side and sent with the hit. The game already only lets the knife hurt tames when PvP is off. | ☐ |
 | A1.5 | Alt+E turns protection on or off for the tame you're looking at. | **P3:** a request to the owner, with no ownership grab. The flag lives on the tame. | ☐ |
 | A1.6 | "Protect all tames" server default, with per-tame override. | Server-synced, admin-locked. | ☐ |
-| A1.7 | Health bar name is blue when protected, yellow while knocked out. | **P11:** colours come from the real state, including a "stuck" safety state if one ever exists. | ☐ |
+| A1.7 | BetterTames: health bar name is blue when protected, yellow while knocked out. | **Changed (Quandru, 2 Nov 2026):** name colours now show the relationship (see D4.8), so protection gets **no name colour**: it's a separate state, shown elsewhere (hover text). Knocked out: to decide whether it still overrides the colour. | ☐ |
 | A1.8 | Downed tames can be hovered and targeted (raycast helper). | Keep it simple. Needed so you can first-aid or butcher them. | ☐ |
 | A1.9 | Tames heal from empty to full in a set time (1 h); healing pauses while hungry. | **P4:** our own tick, not the AI's regeneration. | ☐ |
 
@@ -274,8 +274,8 @@ Only features that the mods we're replacing don't already have. The source is in
 | D4.5 | Your tames on the minimap and map, with no pins added [TamedRadar] | **P11.** | ☐ |
 | D4.6 | A panel listing all your tames, wherever they are [VikingDex] | **P2, P13:** server index. | ☐ |
 | D4.7 | Why an animal is or isn't breeding, shown on hover [NearbyPanel] | **P11.** | ☐ |
-| D4.8 | **Green name for creatures following you** (Quandru, 2 Nov 2026), so you can pick out your followers in a crowd at a glance. BetterTames coloured every tame's name blue (protected), which doesn't say who it follows. Vanilla never colours names. | **P1, P11:** "following you" is decided by your player ID, on your own screen. Needs a priority with A1.7's colours: knocked out (yellow) first, then following you (green), then protected (blue), then plain. | ☐ |
-| D4.9 | **Followers always show their health bar** (Quandru, 2 Nov 2026). Vanilla shows a creature's name and bar within 10 m and only for 60 s after you last hovered over it (`EnemyHud.TestShow`, `m_hoverShowDuration`); tames already get the green "friendly" bar. Lift the 60 s limit (and perhaps widen the range) for creatures following you. | **P11.** Client-side display only. | ☐ |
+| D4.8 | **Name colours by relationship** (Quandru, 2 Nov 2026), so you can pick out your followers in a crowd at a glance: **white** for wild, **green** for tamed, **blue** for following you. Protection has no colour (A1.7). Vanilla never colours names. | **P1, P11:** "following you" is decided by your player ID, on your own screen. Another player's followers show green (tamed). | ☐ |
+| D4.9 | **Your followers always show their health bar, out to 20 m** (Quandru, 2 Nov 2026), persistent with no fade. Vanilla shows a creature's name and bar within 10 m and only for 60 s after you last hovered over it (`EnemyHud.TestShow`, `m_hoverShowDuration`); tames already get the green "friendly" bar. For creatures following you: 20 m and no time limit. | **P11.** Client-side display only. | ☐ |
 
 ### D5. Leveling
 

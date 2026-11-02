@@ -41,8 +41,9 @@ The 16 principles in `feature-list.md` (P1–P16), from the 1 Nov incidents. The
 
 ## Ideas noted
 
-- **Followers at a glance** (2 Nov 2026): a green name for creatures following you, and their health bar always
-  showing. Added to the feature list as D4.8 and D4.9 for the review.
+- **Followers at a glance** (agreed 2 Nov 2026): name colours by relationship, **white** wild, **green** tamed,
+  **blue** following you; protection has no colour. Creatures following you show their health bar out to 20 m,
+  always, with no fade. Feature list D4.8, D4.9 and A1.7.
 
 ## Where I'd like your input
 
