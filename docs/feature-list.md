@@ -188,7 +188,7 @@ These come from the incidents of 1 Nov 2026: about 200 tames moved to a death sp
 | B5.2 | Global follow distance multiplier. | Same as B5.1. | ☐ |
 | B5.3 | Hides tiny "+0" heal numbers. | Same as B5.1. | ☐ |
 | B5.4 | Tamed creatures eat through a patched consume path. | **P8:** works for every AI type. | ☐ |
-| B5.5 | Sends its config and version from server to clients, and refuses a mismatched client. | Use ServerSync or Jotunn version checks like our other mods. | ☐ |
+| B5.5 | Sends its config and version from server to clients, and refuses a mismatched client. | Jotunn's config sync and version check, like our other mods (see `docs/DEVELOPMENT.md`). A YAML tame list would sync as a registered custom config or a Jotunn custom RPC. | ☐ |
 
 ### B6. What the server fix adds
 
