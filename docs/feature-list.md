@@ -93,6 +93,14 @@ These come from the incidents of 1 Nov 2026: about 200 tames moved to a death sp
 | A5.3 | Option: only use chests that hold nothing but food. | Same as A5.1. | ☐ |
 | A5.4 | Never touches dungeon or world chests. | Same as A5.1. | ☐ |
 
+**Wanted (Quandru, 2 Nov 2026):** feeding from chests is needed. Since BetterTames was removed, no mod on the server
+does it. QuanPieces is planning **feeding troughs** (food and water pair; see `QuanPieces/docs/design.md`): plain
+chests cloned from the vanilla wooden chest, with a trough look. QuanPieces adds the pieces only; the feeding is
+QuanCompanions' job, through A5. So A5 must:
+- treat the troughs as ordinary player-built chests (a vanilla `Container` with a creator), with no special case
+  needed; and
+- be tested with them: tames eat from a trough, and the trough's "full" look clears when the last item is taken.
+
 ### A6. Taming and breeding tuning
 
 | ID | Feature | Principle and how we'd do it | Decision |
@@ -305,7 +313,7 @@ Only features that the mods we're replacing don't already have. The source is in
 
 | ID | Feature | Principle | Pick |
 |---|---|---|---|
-| D7.1 | A buildable feeding trough or bowl that animals eat from as if from the ground [TameableAnimals, Feeding Trough mods] | An alternative to A5. **P3.** | ☐ |
+| D7.1 | A buildable feeding trough or bowl that animals eat from as if from the ground [TameableAnimals, Feeding Trough mods] | An alternative to A5. **P3.** The trough itself is coming from QuanPieces as a plain chest (see the note under A5), so here only the feeding (A5) is needed. | ☐ |
 | D7.2 | Per-chest feed range set from a sign on the chest [ServersideQoL] | Same as D7.1. | ☐ |
 | D7.3 | Always leave at least N of each food in a chest [ServersideQoL] | Same as D7.1. | ☐ |
 
