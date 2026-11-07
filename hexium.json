@@ -13,6 +13,6 @@
   "namespace": "Quandru",
   "name": "QuanCompanions",
   "community": "valheim",
-  "installLocation": "undefined",
-  "categories": ["undefined"]
+  "installLocation": "both",
+  "categories": ["Taming", "Creatures", "Mechanics", "Quality of Life", "Open Source", "Valheim 1.0"]
 }
