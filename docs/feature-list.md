@@ -284,6 +284,7 @@ Only features that the mods we're replacing don't already have. The source is in
 | D4.7 | Why an animal is or isn't breeding, shown on hover [NearbyPanel] | **P11.** | ☐ |
 | D4.8 | **Name colours by relationship** (Quandru, 2 Nov 2026), so you can pick out your followers in a crowd at a glance: **white** for wild, **green** for tamed, **blue** for following you. Protection has no colour (A1.7). Vanilla never colours names. | **P1, P11:** "following you" is decided by your player ID, on your own screen. Another player's followers show green (tamed). | ☐ |
 | D4.9 | **Your followers always show their health bar, out to 20 m** (Quandru, 2 Nov 2026), persistent with no fade. Vanilla shows a creature's name and bar within 10 m and only for 60 s after you last hovered over it (`EnemyHud.TestShow`, `m_hoverShowDuration`); tames already get the green "friendly" bar. For creatures following you: 20 m and no time limit. | **P11.** Client-side display only. | ☐ |
+| D4.10 | **Longer tame names** (Quandru, 8 Nov 2026). Vanilla's only limit is the rename box: `Tameable.SetName` opens `TextInput.RequestText(..., 10)`. Nothing downstream checks length (`RPC_SetName` stores any length in `ZDOVars.s_tamedName`), rich text is stripped and the word filter still applies. | Enforced setting for the maximum, about **20** to start. Check in game how the name label above the health bar (`EnemyHud`) handles long names, especially with D4.9's always-on bars. | ☐ |
 
 ### D5. Leveling
 
