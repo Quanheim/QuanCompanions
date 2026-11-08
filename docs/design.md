@@ -20,6 +20,11 @@ One mod for tames on the Quanheim server, replacing:
 Its Thunderstore description must include "tame", "taming" and "breed", and name the mods it replaces: Thunderstore's
 search matches descriptions.
 
+**Credit: decided (Quandru, 8 Nov 2026), none needed.** We replace these mods with our own code and take nothing
+from them; the aim is to do the same jobs better. The mods named in `feature-list.md` are where feature ideas came
+from, not code. If we ever reuse code, assets or a distinctive design from any of them, revisit this and credit the
+author.
+
 ## Rules it follows
 
 The 16 principles in `feature-list.md` (P1–P16), from the 1 Nov incidents. The ones that shape the whole design:
